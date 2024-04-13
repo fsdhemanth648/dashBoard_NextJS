@@ -15,6 +15,11 @@ export default function LoginForm() {
   const [errorMessage, dispatch] = useFormState(authenticate, undefined);
   return (
     <form action={dispatch} className="space-y-3">
+      <div>
+        Default Credentials
+        <p>Username: user@nextmail.com</p>
+        <p>Password: 123456</p>
+      </div>
       <div className="flex-1 rounded-lg bg-gray-50 px-6 pb-4 pt-8">
         <h1 className={`${lusitana.className} mb-3 text-2xl`}>
           Please log in to continue.
